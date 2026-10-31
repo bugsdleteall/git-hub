@@ -1,0 +1,29 @@
+local gui = Instance.new("ScreenGui")
+gui.Name = "GirHub"
+gui.Parent = game:GetService("CoreGui")
+
+local frame = Instance.new("Frame")
+frame.Parent = gui
+frame.Size = UDim2.new(0, 300, 0, 220)
+frame.Position = UDim2.new(0.5, -150, 0.5, -110)
+frame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+
+local title = Instance.new("TextLabel")
+title.Parent = frame
+title.Size = UDim2.new(1, 0, 0, 50)
+title.Text = "GIR HUB | RIVALS"
+title.TextColor3 = Color3.fromRGB(255, 0, 0)
+title.BackgroundTransparency = 1
+title.TextSize = 22
+
+local button = Instance.new("TextButton")
+button.Parent = frame
+button.Position = UDim2.new(0, 20, 0, 80)
+button.Size = UDim2.new(0, 260, 0, 45)
+button.Text = "AIM TRAINER"
+button.BackgroundColor3 = Color3.fromRGB(180, 0, 0)
+button.TextColor3 = Color3.new(1, 1, 1)
+
+button.MouseButton1Click:Connect(function()
+    print("Treino de mira ativado!")
+end)
